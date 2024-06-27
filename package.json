@@ -17,7 +17,8 @@
     "url": "https://github.com/jadhavng/backend-repo/issues"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2"
   },
   "homepage": "https://github.com/jadhavng/backend-repo#readme"
 }
