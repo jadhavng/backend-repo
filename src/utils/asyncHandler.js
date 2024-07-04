@@ -9,11 +9,11 @@ const asyncHandler = (fn) => async (req, res, next)=> {
     }
 }
 
-export {asyncHandler}
+export default asyncHandler
 
 // using promise 
 // const asyncHandler1 = (requestHandler)=>{
-//      (req, res, next)=>{
+//      return (req, res, next)=>{
 //         Promise
 //         .resolve(requestHandler(req, res, next))
 //         .catch((error)=>{ next(error);})
