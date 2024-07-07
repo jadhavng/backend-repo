@@ -1,4 +1,4 @@
-import {V2 as cloudinary} from "cloudinary";
+import {v2 as cloudinary} from "cloudinary";
 import fs from "fs";
 
     // Configuration from cloudanry site
@@ -17,6 +17,7 @@ import fs from "fs";
             });
             //file successfully uploaded 
             console.log("file successfully uploaded cloudinary", response.url);
+            fs.unlinkSync(localFilePath); // remove the locally saved temp file as a upload fails 
             return response;
 
         }catch(error){
@@ -24,5 +25,5 @@ import fs from "fs";
         }
     }
 
-    export {uploadOnCloudinary   }
+    export {uploadOnCloudinary}
     
